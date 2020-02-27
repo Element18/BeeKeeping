@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.beekeeping.Activity.CreateAccount"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Create Acoount"
+                        android:textAllCaps="true"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/my_view"
+            android:padding="15dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="username"
+                android:id="@+id/name"
+                android:padding="7dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/normal_edit_background"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="7dp"
+                android:hint="email"
+                android:id="@+id/email"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/normal_edit_background"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="phonenumber"
+                android:padding="7dp"
+                android:id="@+id/number"
+                android:background="@drawable/normal_edit_background"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="password"
+                android:padding="7dp"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:background="@drawable/normal_edit_background"
+                android:layout_marginTop="15dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="comfirmPassword"
+                android:padding="7dp"
+                android:inputType="textPassword"
+                android:id="@+id/comfirmPassword"
+                android:background="@drawable/normal_edit_background"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:background="@drawable/button_customize"
+                android:id="@+id/signupbtn"
+                android:layout_marginTop="15dp"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

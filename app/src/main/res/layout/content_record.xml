@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.dell.beekeeping.Activity.Record"
+    tools:showIn="@layout/activity_record"
+    android:fillViewport="true"
+    android:background="@drawable/my_view">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="440dp"
+                android:id="@+id/cardAddress">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/my_view">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/AddressHeader"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:text="Location"
+                        android:layout_centerHorizontal="true">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/layout1"
+                        android:layout_below="@+id/AddressHeader"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ADDRESS:"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_marginEnd="5dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/edittext_background"
+                            android:hint="address"
+                            android:id="@+id/address"
+                            android:padding="8dp"
+                            android:inputType="textMultiLine"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/layout1"
+                        android:id="@+id/layout2">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="APIARY_NO:"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/apiaryno_name"
+                            android:inputType="text"
+                            android:background="@drawable/edittext_background"
+                            android:id="@+id/apiaryno"
+                            android:padding="8dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/layout2"
+                        android:id="@+id/layout3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TOWN:"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+
+                            android:textColor="@color/colorPrimary"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_background"
+                            android:hint="@string/town"
+                            android:id="@+id/town"
+                            android:padding="8dp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/layout3"
+                        android:id="@+id/layout4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LATITUDE :"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_background"
+                            android:hint="click to get Latitude"
+                            android:inputType="number"
+                            android:id="@+id/latitude"
+                            android:padding="8dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/layout4"
+                        android:id="@+id/layout5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LONGITUDE :"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"/>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext_background"
+                            android:hint="click to get Longitude"
+                            android:inputType="number"
+                            android:id="@+id/longitude"
+                            android:padding="8dp"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+           <android.support.v7.widget.CardView
+               android:layout_width="wrap_content"
+               android:layout_height="600dp"
+               android:layout_below="@+id/cardAddress"
+               android:id="@+id/cardview"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/my_view">
+
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="10dp"
+                   android:background="@drawable/my_view">
+
+
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Hive Details"
+                       android:textSize="30sp"
+                       android:textStyle="bold"
+                       android:id="@+id/details"
+                       android:layout_centerHorizontal="true">
+
+                   </TextView>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_marginTop="20dp"
+                       android:layout_below="@+id/details"
+                       android:id="@+id/layout6">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="HIVE NO/NAME:"
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+
+                           android:textColor="@color/colorPrimary"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:maxLines="1"
+                           android:ellipsize="end"
+                           android:hint="hive no/name"
+                           android:inputType="text"
+                           android:id="@+id/hivename"
+                           android:padding="8dp"
+                           android:background="@drawable/edittext_background"/>
+
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_marginTop="15dp"
+                       android:layout_below="@+id/layout6"
+                       android:id="@+id/layout7">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="NO OF COMBS:"
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+                           android:textColor="@color/colorPrimary"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="no of combs "
+                           android:id="@+id/combs"
+                           android:inputType="number"
+                           android:padding="8dp"
+                           android:background="@drawable/edittext_background"/>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_marginTop="15dp"
+                       android:layout_below="@+id/layout7"
+                       android:id="@+id/layout8">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="DATE OF HARVEST:"
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+                           android:textColor="@color/colorPrimary"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="date Of Harvest"
+                           android:id="@+id/harvest"
+
+                           android:padding="8dp"
+                           android:inputType="textMultiLine"
+                           android:background="@drawable/edittext_background"/>
+
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_marginTop="15dp"
+                       android:layout_below="@+id/layout8"
+                       android:id="@+id/layout9">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="DATE COLONISED:"
+                           android:textSize="20sp"
+                           android:textStyle="bold"
+                           android:textColor="@color/colorPrimary"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="date Of Colonisation"
+                           android:id="@+id/colonisation"
+                           android:padding="8dp"
+                           android:background="@drawable/edittext_background"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_marginTop="15dp"
+                       android:layout_below="@+id/layout9"
+                       android:id="@+id/layout10">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="WAX HARVESTED:"
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+
+                           android:textColor="@color/colorPrimary"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:maxLines="1"
+                           android:ellipsize="end"
+                           android:hint="no Of Wax Harvested"
+                           android:id="@+id/wax"
+                           android:padding="8dp"
+                           android:background="@drawable/edittext_background"/>
+
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="15dp"
+                       android:orientation="vertical"
+                       android:layout_below="@+id/layout10"
+                       android:id="@+id/layout11">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="QTY OF HONEY HARVESTED:"
+                           android:textSize="20sp"
+                           android:textStyle="bold"
+                           android:textColor="@color/colorPrimary"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="quantity Of honey"
+                           android:id="@+id/honey"
+                           android:padding="8dp"
+                           android:background="@drawable/edittext_background"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       android:layout_marginTop="15dp"
+                       android:layout_below="@+id/layout11"
+                       android:id="@+id/layout12">
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="QTY OF PROPOLIS:"
+                           android:textStyle="bold"
+                           android:textSize="20sp"
+                           android:textColor="@color/colorPrimary"/>
+
+                       <EditText
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:hint="no Of Propolis"
+                           android:id="@+id/propolis"
+                           android:padding="8dp"
+                           android:background="@drawable/edittext_background"/>
+
+                   </LinearLayout>
+               </RelativeLayout>
+           </android.support.v7.widget.CardView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cardview"
+                android:id="@+id/layout13">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:hint="@string/cancel"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:id="@+id/cancel"
+                    android:background="@drawable/button_customize"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:hint="@string/save"
+                    android:id="@+id/save"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_customize"
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

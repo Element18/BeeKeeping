@@ -1,0 +1,30 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.dell.beekeeping.Activity.AddHivesActivity"
+    android:background = "#fff">
+
+
+    <item
+        android:id="@+id/action_edit"
+        android:title = "EDIT"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:background = "#fff"
+        >
+
+    </item>
+
+
+
+    <item
+        android:id="@+id/delete1"
+        app:showAsAction="always"
+        android:title="delete"
+        android:icon="@drawable/ic_delete"
+        android:orderInCategory="100">
+
+    </item>
+
+</menu>

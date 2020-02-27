@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+    android:id="@+id/hiveToolBar"
+    app:theme = "@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:text="0 item selected"
+            android:id="@+id/actionText"
+            android:textColor="@color/colorYellow"
+            android:visibility="gone">
+
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/hive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hive"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:layout_marginStart="4dp"/>
+
+        <TextView
+            android:id="@+id/action_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="edit"
+            android:visibility="gone"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"/>
+
+</android.support.v7.widget.Toolbar>
+
